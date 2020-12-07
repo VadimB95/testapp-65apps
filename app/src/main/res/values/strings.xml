@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name" translatable="false">65apps staff</string>
+
+    <string name="network_error_message_no_cache">Network error</string>
+    <string name="network_error_message">Network error. Showing the latest locally saved version.</string>
+    <string name="refresh_title">Refresh</string>
+    <string name="specialties_label">Specialties</string>
+    <string name="specialty_label">Specialty:</string>
+    <string name="employees_list_label">Employees list</string>
+    <string name="age_label">Age:</string>
+    <string name="employee_info_label">Employee information</string>
+    <string name="last_name_label">Last name:</string>
+    <string name="first_name_label">First name:</string>
+    <string name="birthday_label">Date of Birth:</string>
+    <string name="employee_photo_label">Employee photo</string>
+    <string name="network_error_icon_label">Network error icon</string>
+    <string name="company_logo_label">Company logo</string>
+</resources>

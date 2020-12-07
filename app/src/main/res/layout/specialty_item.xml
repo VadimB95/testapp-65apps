@@ -1,0 +1,30 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.example.employees65apps.viewmodels.SpecialtiesViewModel" />
+
+        <variable
+            name="specialty"
+            type="com.example.employees65apps.domain.Specialty" />
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="@{() -> viewModel.onNavigateToSelectedSpecialty(specialty)}">
+
+        <TextView
+            android:id="@+id/employee_last_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="@{specialty.name}"
+            android:textSize="18sp"
+            tools:text="Разработчик" />
+    </FrameLayout>
+</layout>

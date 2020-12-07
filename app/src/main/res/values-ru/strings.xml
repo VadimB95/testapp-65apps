@@ -1,0 +1,16 @@
+<resources>
+    <string name="network_error_message_no_cache">Ошибка интернет-соединения</string>
+    <string name="network_error_message">Ошибка интернет-соединения. Отображение последней сохраненной версии.</string>
+    <string name="refresh_title">Обновить</string>
+    <string name="specialties_label">Специальности</string>
+    <string name="specialty_label">Специальность:</string>
+    <string name="employees_list_label">Список работников</string>
+    <string name="age_label">Возраст:</string>
+    <string name="employee_info_label">Информация о работнике</string>
+    <string name="last_name_label">Фамилия:</string>
+    <string name="first_name_label">Имя:</string>
+    <string name="birthday_label">Дата рождения:</string>
+    <string name="employee_photo_label">Фото работника</string>
+    <string name="network_error_icon_label">Иконка ошибка интернет-соединения</string>
+    <string name="company_logo_label">Логотип компании</string>
+</resources>

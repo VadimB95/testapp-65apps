@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/specialtiesFragment">
+    <fragment
+        android:id="@+id/specialtiesFragment"
+        android:name="com.example.employees65apps.ui.SpecialtiesFragment"
+        android:label="@string/specialties_label"
+        tools:layout="@layout/fragment_specialties">
+        <action
+            android:id="@+id/action_specialtiesFragment_to_employeesFragment"
+            app:destination="@id/employeesFragment"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit"
+            app:popEnterAnim="@anim/fragment_fade_enter"
+            app:popExitAnim="@anim/fragment_fade_exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/employeesFragment"
+        android:name="com.example.employees65apps.ui.EmployeesFragment"
+        android:label="@string/employees_list_label"
+        tools:layout="@layout/fragment_employees">
+        <action
+            android:id="@+id/action_employeesFragment_to_employeeDetailedFragment"
+            app:destination="@id/employeeDetailedFragment"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit"
+            app:popEnterAnim="@anim/fragment_fade_enter"
+            app:popExitAnim="@anim/fragment_fade_exit" />
+        <argument
+            android:name="specialty"
+            app:argType="com.example.employees65apps.domain.Specialty" />
+    </fragment>
+    <fragment
+        android:id="@+id/employeeDetailedFragment"
+        android:name="com.example.employees65apps.ui.EmployeeDetailedFragment"
+        android:label="@string/employee_info_label"
+        tools:layout="@layout/fragment_employee_detailed" >
+        <argument
+            android:name="employee"
+            app:argType="com.example.employees65apps.domain.EmployeeWithSpecialties" />
+    </fragment>
+</navigation>

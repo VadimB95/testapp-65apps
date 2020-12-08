@@ -2,7 +2,9 @@
 Приложение для отображения информации о персонале (тестовое задание).
 
 Используется:
-* MVVM
+* MVVM architecture
+* Repository pattern
+* Separation-of-concerns principle (network, database, domain models)
 * Retrofit (HTTP запросы)
 * Moshi (парсинг JSON)
 * Room (SQLite)
